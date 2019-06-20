@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$(() => {
+				$('#send').on('click', () => {
+					$.post('http://YOUR_SERVER_ADDRESS/chats/', 
+						   'user_id=' + $('#user_id').val()).done();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<input type="text" id="user_id">
+		<button id="send">送信</button>
+	</body>
+</html>
