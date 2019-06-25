@@ -13,5 +13,5 @@ $ sudo pip install flask-cors
 Flaskはデフォルトで5000番ポートで起動するためサーバーのセキュリティ設定が必要
 
 サーバーの実行方法
-$ export FLASK_APP=.py
+$ export FLASK_APP=api_server.py
 $ flask run --debugger --reload --host=0.0.0.0
